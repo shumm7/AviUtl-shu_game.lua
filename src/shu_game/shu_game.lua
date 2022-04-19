@@ -1,12 +1,14 @@
 --[[
 
   shu_game.lua
-	               v1.0 (2021-07-11)
+	               v1.1 (2022-04-20)
 
 ]]
 
 
 require("rikky_module")
+
+local version = "1.1"
 
 local function getMouseInfo(rl)
 	local mx, my = rikky_module.mouse()
@@ -92,5 +94,6 @@ end
 return {
 	getMouseInfo = getMouseInfo,
 	setGlobalVariable = setGlobalVariable,
-	checkOnClicked = checkOnClicked
+	checkOnClicked = checkOnClicked,
+	version = version
 }
